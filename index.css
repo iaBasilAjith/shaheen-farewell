@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  background-image: url("./wordcloud.png");
+  background-size: cover;
+}
+
+.app {
+  min-height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-logo {
+  height: 50vmin;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .app-logo {
+    animation: app-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes app-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
